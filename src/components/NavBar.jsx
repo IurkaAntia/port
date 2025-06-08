@@ -12,7 +12,7 @@ export const NavBar = ({ menuOpen, setMenuOpen }) => {
                 <div className="flex justify-between items-center h-16">
                     <a href="#home" className="text-xl font-bold font-mono text-white">
                         <img 
-                            src="/favicon-96x96.png" 
+                            src="/favicon.svg" 
                             alt="Iuri Antia Logo" 
                             className="w-8 h-8 object-contain"
                         />

@@ -34,11 +34,11 @@ function App() {
         <meta property="og:description" content="Showcasing robust web and mobile development work using Laravel, React, and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://iuriantia.netlify.app" />
-        <meta property="og:image" content="https://iuriantia.netlify.app/favicon.svg" />
+        <meta property="og:image" content="https://iuriantia.netlify.app/preview.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Iuri Antia | Full Stack Web & Mobile Developer" />
-        <meta name="twitter:description" content="Explore the portfolio of Iuri Antia – building fast, scalable, and elegant web & mobile apps." />
+        <meta name="twitter:description" content="Explore the portfolio of Iuri Antia – building fast and scalable web & mobile apps." />
         <meta name="twitter:image" content="https://iuriantia.netlify.app/preview.png" />
 
         <script type="application/ld+json">
