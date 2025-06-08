@@ -49,9 +49,9 @@ function App() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com" />
-        <meta property="og:image" content="https://Antia.netlify.app/favicon.svg" /> {/* optional preview image */}
+        <meta property="og:image" content="https://iuriantia.netlify.app/favicon.svg" /> {/* optional preview image */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Iuri Antia | Full Stack & Mobile Developer" />
+        <meta name="twitter:title" content="Iuri Antia | Full Stack Web & Mobile Developer" />
         <meta
           name="twitter:description"
           content="Explore the portfolio of Iuri Antia – building fast, scalable, and elegant web/mobile apps."
@@ -60,11 +60,11 @@ function App() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "Iura Antia",
-            url: "https://Antia.netlify.app",
+            name: "Iuri Antia",
+            url: "https://iuriantia.netlify.app",
             sameAs: ["https://linkedin.com/in/iuri-antia-832b4326"],
-            jobTitle: "Full Stack Web Developer",
-            image: "https://Antia.netlify.app/logo.png",
+            jobTitle: "Full Stack Web & Mobile Developer",
+            image: "https://iuriantia.netlify.app/logo.png",
           })}
         </script>;
         
