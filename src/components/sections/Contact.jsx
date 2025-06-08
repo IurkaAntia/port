@@ -1,15 +1,11 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
-import { Helmet } from "react-helmet"
+
 
 export const Contact = ({seo}) => {
     return ( 
-        <>
-            <Helmet>
-                <title>{seo.title}</title>
-                <meta name="description" content={seo.description} />
-            </Helmet>
+      
         <section id="contact" className=" min-h-screen flex items-center justify-center py-20 bg-black text-white">
             <RevealOnScroll>
                 <div className=" px-4 text-center">
@@ -43,6 +39,6 @@ export const Contact = ({seo}) => {
                 </div>
             </RevealOnScroll>
         </section>
-    </>
+
     )
 }

@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { FaAward, FaBriefcase, FaGraduationCap } from "react-icons/fa";
-import { Helmet } from "react-helmet";
+
 export const About = ({seo}) => {
   const allSkills = [
     "PHP", "OOP", "MVC", "Laravel",
@@ -14,12 +14,7 @@ export const About = ({seo}) => {
   const toolsAndPlatforms = allSkills.slice(11);
 
   return (
-    <>
-
-    <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-      </Helmet>
+  
     <section id="about" className="min-h-screen flex items-center justify-center py-20 ">
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4 ">
@@ -109,6 +104,6 @@ export const About = ({seo}) => {
         </div>
       </RevealOnScroll>
     </section>
-    </>
+
   );
 };

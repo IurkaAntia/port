@@ -1,13 +1,9 @@
 import { RevealOnScroll } from "../RevealOnScroll"
-import { Helmet } from "react-helmet"
+
 
 export const Home = ({seo}) => {
     return (
-        <>
-        <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-      </Helmet>
+   
         <section id="home" className="min-h-screen flex items-center justify-center relative">
             <RevealOnScroll>
             <div className="text-center z-10 px-4">
@@ -30,6 +26,6 @@ export const Home = ({seo}) => {
             </div>
             </RevealOnScroll>
         </section>
-    </>
+
     )
 }   

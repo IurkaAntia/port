@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { Helmet } from "react-helmet";
+
 const projects = [
   {
     title: "Scan Tbilisi",
@@ -63,11 +63,7 @@ const projects = [
 
 export const Projects = ({seo}) => {
   return (
-    <>
-    <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-      </Helmet>
+    
     <section id="projects" className="min-h-screen flex items-center justify-center py-20">
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
@@ -124,6 +120,6 @@ export const Projects = ({seo}) => {
         </div>
       </RevealOnScroll>
     </section>
-    </>
+    
   );
 };

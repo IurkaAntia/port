@@ -12,25 +12,7 @@ import { Helmet } from 'react-helmet'
 
 function App() {
 
-  const seoData = {
-    home: {
-      title: "Home | Iuri Antia - Full Stack Developer",
-      description: "Welcome to the portfolio of Iuri Antia, a skilled Full Stack Developer specializing in React, Laravel, and mobile development. Discover innovative projects and clean code craftsmanship.",
-    },
-    about: {
-      title: "About Me | Iuri Antia - Full Stack & Mobile Developer",
-      description: "Learn more about Iuri Antia, a passionate Full Stack and Mobile Developer with 2+ years of experience creating scalable, user-centric web and mobile applications.",
-    },
-    projects: {
-      title: "Projects | Iuri Antia - React, Laravel & Mobile Apps",
-      description: "Explore a curated selection of Iuri Antia’s web and mobile projects built with modern technologies like React, React Native, Laravel, and MySQL. See how innovation meets quality.",
-    },
-    contact: {
-      title: "Contact | Iuri Antia - Get in Touch",
-      description: "Reach out to Iuri Antia for collaboration, freelance opportunities, or project inquiries. Let’s build something amazing together!",
-    },
-  }
-  
+ 
   const [isLoaded, setIsLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -42,20 +24,23 @@ function App() {
           name="description"
           content="Portfolio of Iuri Antia – Full Stack Web & Mobile Developer specializing in Laravel, React, and React Native. Explore projects, skills, and contact info."
         />
+        <meta name="keywords" content="Iuri Antia, Full Stack Developer, Web Developer, Laravel, React Native, JavaScript, Georgia Developer" />
+        <meta name="author" content="Iuri Antia" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://iuriantia.netlify.app" />
+
         <meta property="og:title" content="Iuri Antia | Full Stack Web & Mobile Developer" />
-        <meta
-          property="og:description"
-          content="Showcasing robust web and mobile development work using Laravel, React, and more."
-        />
+        <meta property="og:description" content="Showcasing robust web and mobile development work using Laravel, React, and more." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com" />
-        <meta property="og:image" content="https://iuriantia.netlify.app/favicon.svg" /> {/* optional preview image */}
+        <meta property="og:url" content="https://iuriantia.netlify.app" />
+        <meta property="og:image" content="https://iuriantia.netlify.app/favicon.svg" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Iuri Antia | Full Stack Web & Mobile Developer" />
-        <meta
-          name="twitter:description"
-          content="Explore the portfolio of Iuri Antia – building fast, scalable, and elegant web/mobile apps."
-        />
+        <meta name="twitter:description" content="Explore the portfolio of Iuri Antia – building fast, scalable, and elegant web & mobile apps." />
+        <meta name="twitter:image" content="https://iuriantia.netlify.app/preview.png" />
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -64,11 +49,11 @@ function App() {
             url: "https://iuriantia.netlify.app",
             sameAs: ["https://linkedin.com/in/iuri-antia-832b4326"],
             jobTitle: "Full Stack Web & Mobile Developer",
-            image: "https://iuriantia.netlify.app/logo.png",
+            image: "https://iuriantia.netlify.app/favicon.svg",
           })}
-        </script>;
-        
+        </script>
       </Helmet>
+
 
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
 
@@ -77,10 +62,10 @@ function App() {
       >
         <NavBar  menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu  menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Home seo={seoData.home} />
-        <About seo={seoData.about} />
-        <Projects seo={seoData.projects} />
-        <Contact seo={seoData.contact} />
+        <Home  />
+        <About  />
+        <Projects  />
+        <Contact />
       </div>
     </>
   )
