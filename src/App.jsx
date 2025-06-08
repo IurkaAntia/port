@@ -20,6 +20,7 @@ function App() {
     <>
       <Helmet>
         <title>Iuri Antia | Full Stack Web & Mobile Developer</title>
+        <meta charSet="UTF-8" />
         <meta
           name="description"
           content="Portfolio of Iuri Antia – Full Stack Web & Mobile Developer specializing in Laravel, React, and React Native. Explore projects, skills, and contact info."
