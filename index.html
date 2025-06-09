@@ -1,37 +1,27 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  
-  <meta name="robots" content="index, follow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon for standard browsers -->
-  <link rel="icon" type="image/png" href="/logo.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  
-  <!-- Apple icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-  
-  <!-- Manifest for PWA -->
-  <link rel="manifest" href="/site.webmanifest" />
+    <!-- Favicon and PWA -->
+    <link rel="icon" type="image/png" href="/logo.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iuri Antia | Full Stack Web & Mobile Developer</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZBHTDT493"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GZBHTDT493');
+    </script>
 
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZBHTDT493"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-GZBHTDT493');
-  </script>
-
-</head>
-
+    <title>Iuri Antia</title>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
