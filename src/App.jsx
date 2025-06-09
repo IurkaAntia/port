@@ -50,7 +50,7 @@ function App() {
             url: "https://iuriantia.netlify.app",
             sameAs: ["https://linkedin.com/in/iuri-antia-832b4326"],
             jobTitle: "Full Stack Web & Mobile Developer",
-            image: "https://iuriantia.netlify.app/favicon.svg",
+            image: "https://iuriantia.netlify.app/logo.png",
           })}
         </script>
       </Helmet>
