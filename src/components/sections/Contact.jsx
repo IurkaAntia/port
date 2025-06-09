@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 
 
-export const Contact = ({seo}) => {
-    return ( 
-      
+export const Contact = () => {
+    return (
+
         <section id="contact" className=" min-h-screen flex items-center justify-center py-20 bg-black text-white">
             <RevealOnScroll>
                 <div className=" px-4 text-center">
@@ -18,13 +18,13 @@ export const Contact = ({seo}) => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-blue-500 transition"
-                            >
+                        >
                             <FaGithub />
                         </a>
                         <a
                             href="mailto:www.iuriantia@gmail.com"
                             className="hover:text-red-500 transition"
-                            >
+                        >
                             <SiGmail />
                         </a>
                         <a
@@ -32,7 +32,7 @@ export const Contact = ({seo}) => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-blue-400 transition"
-                            >
+                        >
                             <FaLinkedin />
                         </a>
                     </div>

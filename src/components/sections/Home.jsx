@@ -1,7 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 
 
-export const Home = ({seo}) => {
+export const Home = () => {
     return (
    
         <section id="home" className="min-h-screen flex items-center justify-center relative">

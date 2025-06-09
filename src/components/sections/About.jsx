@@ -1,7 +1,12 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { FaAward, FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import {
+  FaAward,
+  FaBriefcase,
+  FaGraduationCap,
+  FaUserCheck,
+} from "react-icons/fa";
 
-export const About = ({seo}) => {
+export const About = () => {
   const allSkills = [
     "PHP", "OOP", "MVC", "Laravel",
     "React.js", "React Native", "JavaScript", "TypeScript", "HTML & CSS",
@@ -14,17 +19,16 @@ export const About = ({seo}) => {
   const toolsAndPlatforms = allSkills.slice(11);
 
   return (
-  
-    <section id="about" className="min-h-screen flex items-center justify-center py-20 ">
+    <section id="about" className="min-h-screen flex items-center justify-center py-20">
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4 ">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-center text-transparent ">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-center text-transparent">
             About Me
           </h2>
 
           <div className="glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-                Full Stack Web & Mobile Developer with 2+ years of experience delivering robust, maintainable, and user-centric software. I’ve contributed to multiple public and internal platforms, improving performance and user engagement by up to 60%. My focus lies in clean code, scalable architecture, and cross-functional team collaboration.
+              Full Stack Web & Mobile Developer with 2+ years of experience delivering robust, maintainable, and user-centric software. I’ve contributed to multiple public and internal platforms, improving performance and user engagement by up to 60%. My focus lies in clean code, scalable architecture, and cross-functional team collaboration.
             </p>
 
             {/* Skills in two columns */}
@@ -33,10 +37,10 @@ export const About = ({seo}) => {
                 <h3 className="text-xl font-bold mb-4">Languages & Frameworks:</h3>
                 <div className="flex flex-wrap gap-2">
                   {languagesAndFrameworks.map((skill, key) => (
-                      <span
+                    <span
                       key={key}
                       className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                      >
+                    >
                       {skill}
                     </span>
                   ))}
@@ -47,10 +51,10 @@ export const About = ({seo}) => {
                 <h3 className="text-xl font-bold mb-4">Tools & Platforms:</h3>
                 <div className="flex flex-wrap gap-2">
                   {toolsAndPlatforms.map((skill, key) => (
-                      <span
+                    <span
                       key={key}
                       className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                      >
+                    >
                       {skill}
                     </span>
                   ))}
@@ -59,8 +63,9 @@ export const About = ({seo}) => {
             </div>
           </div>
 
+          {/* Education & Work */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all ">
+            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4 flex items-center space-x-2">
                 <FaGraduationCap className="text-purple-400 w-6 h-6" />
                 <span>Education</span>
@@ -72,7 +77,8 @@ export const About = ({seo}) => {
                 <li>Relevant Coursework: Web Development, Data Structures, Algorithms.</li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all ">
+
+            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4 flex items-center space-x-2">
                 <FaBriefcase className="text-blue-400 w-5 h-5" />
                 <span>Work Experience</span>
@@ -86,24 +92,71 @@ export const About = ({seo}) => {
             </div>
           </div>
 
-          <div className="p-6  rounded-xl border border-white/10 hover:-translate-y-1 transition-all mt-8">
+          {/* Recommendations */}
+          <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all mt-8">
+            <h3 className="text-xl font-bold mb-6 flex items-center space-x-2">
+              <FaUserCheck className="text-green-400 w-5 h-5" />
+              <span>Recommendations</span>
+            </h3>
+
+            <div className="flex flex-col md:flex-row gap-6 text-gray-300">
+              <div className="flex-1 p-4 rounded-lg  border-white/10 border hover:-translate-y-1 transition-all space-y-1">
+                <h4 className="font-semibold">Director of LTD Integral</h4>
+                <h5>Beka Toklikishvili</h5>
+                <a
+                  href="https://www.hr.gov.ge/files/157b178d-ff10-4db3-a149-3971c7ae8107"
+                  className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See Recommendation
+                </a>
+              </div>
+
+              <div className="flex-1 p-4 rounded-lg border-white/10 border hover:-translate-y-1 transition-all space-y-1">
+                <h4 className="font-semibold">Guest Lecturer, Sokhumi State University</h4>
+                <h5>Beka Toklikishvili</h5>
+                <a
+                  href="https://www.hr.gov.ge/files/5444358d-1617-444f-84b8-6f58038f40a5"
+                  className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See Recommendation
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Awards */}
+          <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all mt-8">
             <h3 className="text-xl font-bold mb-4 flex items-center space-x-2">
               <FaAward className="text-yellow-400 w-5 h-5" />
               <span>Awards</span>
             </h3>
             <div className="space-y-4 text-gray-300">
-              <div>
-                <h4 className="font-semibold">3rd Place (OIOIUS-2024)</h4>
+              <div className="space-y-1">
+                <h4 className="font-semibold">
+
+                  3rd Place (OIOIUS-2024)
+
+                </h4>
+
                 <p>
+
                   II Open International Olympiad in Informatics of University Students<br />
                   Ashgabat, Turkmenistan – 04/2024
                 </p>
+                <a href="https://iogu.edu.tm/en/news/418"
+                  target="_blank" rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+                  View Site
+                </a>
               </div>
             </div>
           </div>
         </div>
       </RevealOnScroll>
     </section>
-
   );
 };
