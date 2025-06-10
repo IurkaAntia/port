@@ -14,7 +14,7 @@ export const Contact = () => {
                     </h2>
                     <div className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition relative flex justify-center space-x-8 text-4xl">
                         <a
-                            href="https://github.com/IurkaAntia"
+                            href="https://github.com/iuriantia"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-blue-500 transition"

@@ -72,7 +72,7 @@ export const About = () => {
               </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>B.S in Computer Technologies</strong> - Sokhumi State University (2022 - Present)
+                  <strong>B.S in Computer Technologies</strong> - Sokhumi State University (2021 - Present)
                 </li>
                 <li>Relevant Coursework: Web Development, Data Structures, Algorithms.</li>
               </ul>
