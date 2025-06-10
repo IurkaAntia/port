@@ -2,52 +2,48 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import GithubIcon from "lucide-react/dist/esm/icons/github";
 
 
-const projects = [
-  {
-    title: "Scan Tbilisi",
-    description:
-      "QR-code based system on historical buildings in Tbilisi that provides passers-by with stories and information in Georgian and English. Improved accessibility to cultural heritage by 60%.",
-    stack: ["Laravel", "MySQL", "jQuery", "Bootstrap"],
-    link: "https://www.scantbilisi.ge/en",
-  },
-  {
-    title: "Zugdidi Municipality Web App",
-    description:
-      "Official site of Zugdidi Municipality, providing community information, services, and event updates for citizens and tourists. Enhanced civic accessibility by 50%.",
-    stack: ["Laravel", "Bootstrap", "JQuery", "MySQL"],
-    link: "https://zugdidi.gov.ge/ka",
-  },
-  {
-    title: "Social Services for Youth",
-    description:
-      "Platform for informing youth about nine categories of government social assistance aimed at promoting equality and opportunities. Increased service awareness by 40%.",
-    stack: ["Laravel", "MySQL", "Bootstrap", "JQuery"],
-    link: "https://www.ssyouth.ge",
-  },
-  {
-    title: "Sou Stud App",
-    description: "Student-focused app with push notifications...",
-    stack: ["Laravel", "MySQL", "React Native", "StyleSheet"],
-    // link: "https://example.com", // optional website
-    github: "https://github.com/tornikeokroadze/SouStud-APP", // separate GitHub
-  },
-  {
-    title: "SSyouth Social Services App",
-    description:
-      "Frontend interface for accessing and applying to various youth-focused social services using a clean and responsive UI. Improved user interaction by 35%.",
-    stack: ["React Native", "StyleSheet", "Laravel", "MySQL"],
-    link: "https://play.google.com/store/apps/details?id=com.ssyouth",
-    offline: true,
-  },
-  {
-    title: "Real Estate Internal Tool",
-    description:
-      "Internal system for managing real estate clients and listings with search and filter matching by employee-defined preferences. Accelerated client-property matching by 45%.",
-    stack: ["jQuery", "Ajax", "Laravel", "Bootstrap", "MySQL"],
-    link: "https://17.com.ge/admin/en/login",
-    offline: true,
-  },
-];
+const projects = 
+  [
+    {
+      "title": "Scan Tbilisi",
+      "description": "Developed a Laravel-based admin panel and MySQL backend for a cultural guide showcasing historical buildings in Old Tbilisi. Enabled bilingual access to building stories via tile scanning, increasing cultural heritage accessibility by 60%.",
+      "stack": ["Laravel", "MySQL", "jQuery", "Bootstrap"],
+      "link": "https://www.scantbilisi.ge/en"
+    },
+    {
+      "title": "Zugdidi Municipality Web App",
+      "description": "Built a comprehensive online platform using Laravel and Bootstrap to provide community information, municipal services, and event updates for citizens and tourists. Enhanced civic engagement and accessibility by 50%.",
+      "stack": ["Laravel", "Bootstrap", "jQuery", "MySQL"],
+      "link": "https://zugdidi.gov.ge/ka"
+    },
+    {
+      "title": "Social Services for Youth",
+      "description": "Developed APIs and backend services with Laravel and MySQL to inform youth about nine categories of government social assistance, promoting equal opportunities and increasing service awareness by 40%.",
+      "stack": ["Laravel", "MySQL", "Bootstrap", "jQuery"],
+      "link": "https://www.ssyouth.ge"
+    },
+    {
+      "title": "Sou Stud App",
+      "description": "Created a student-focused mobile app using React Native and Laravel backend, featuring push notifications to enhance communication and engagement among users.",
+      "stack": ["Laravel", "MySQL", "React Native", "StyleSheet"],
+      "github": "https://github.com/tornikeokroadze/SouStud-APP"
+    },
+    {
+      "title": "SSyouth Social Services App",
+      "description": "Designed and implemented a clean, responsive frontend with React Native for youth to access and apply for social services easily, improving user interaction by 35%.",
+      "stack": ["React Native", "StyleSheet", "Laravel", "MySQL"],
+      "link": "https://play.google.com/store/apps/details?id=com.ssyouth",
+      "offline": true
+    },
+    {
+      "title": "Real Estate Internal Tool",
+      "description": "Developed an internal real estate management web app using Laravel, jQuery, and Bootstrap, enabling employees to register clients and manage property listings efficiently, accelerating client-property matching by 45%.",
+      "stack": ["jQuery", "Ajax", "Laravel", "Bootstrap", "MySQL"],
+      "link": "https://17.com.ge/admin/en/login",
+      "offline": true
+    }
+  ]
+  
 
 export const Projects = () => {
   return (

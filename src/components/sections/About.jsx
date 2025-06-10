@@ -28,7 +28,7 @@ export const About = () => {
 
           <div className="glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Full Stack Web & Mobile Developer with 2+ years of experience delivering robust, maintainable, and user-centric software. I’ve contributed to multiple public and internal platforms, improving performance and user engagement by up to 60%. My focus lies in clean code, scalable architecture, and cross-functional team collaboration.
+            I'm a Full Stack Web & Mobile Developer with over 2+ years of experience building and maintaining scalable, user-focused applications using Laravel, React.js, React Native, and MySQL. Proven track record of boosting performance and user engagement by up to 60% across various public platforms and internal tools. Skilled in writing clean, maintainable code, optimizing databases, and integrating APIs securely. Passionate about continuous learning, scalable architecture, and collaborating with cross-functional teams to deliver high-quality solutions. 
             </p>
 
             {/* Skills in two columns */}
